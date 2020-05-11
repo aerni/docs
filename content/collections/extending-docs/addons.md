@@ -205,7 +205,7 @@ This will do two things:
 - Mark the file for publishing when the `artisan vendor:publish` command is used.
 
 ``` bash
-php artisan vendor:publish --provider=YourServiceProvider --force
+php artisan vendor:publish --provider="YourServiceProvider" --force
 ```
 
 When an end user installs or updates your addon, the `vendor:publish` command will automatically be run behind the scenes for them.
