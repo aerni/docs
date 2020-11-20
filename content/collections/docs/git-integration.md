@@ -191,7 +191,7 @@ fi
 ### Ploi
 
 ```bash
-if [[ {COMMIT_MESSAGE} =~ "[BOT]" ]]; then
+if [[ {COMMIT_MESSAGE} =~ [BOT] ]]; then
     echo "AUTO-COMMITTED ON PRODUCTION. NOTHING TO DEPLOY."
     exit 0
 fi
