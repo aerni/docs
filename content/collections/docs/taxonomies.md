@@ -45,12 +45,12 @@ URLs use slugs with dashes, and views use handles with underscores.
 
 - **Global Taxonomy Details**
   - Display the details of the taxonomy, so you can list the terms.
-  - Accessible at `/{taxonomy-slug}` (eg. `/product-tags`)
-  - The `{taxonomy_handle}/index` view will be used (eg. `product_tags/index.antlers.html`)
+  - Accessible at `/{taxonomy-slug}` (eg. `/tags`)
+  - The `{taxonomy_handle}/index` view will be used (eg. `tags/index.antlers.html`)
 - **Global Term details**
   - Display the details of the term, so you can list the entries.
-  - Accessible at `/{taxonomy-slug}/{term-slug}` (eg. `/product-tags/t-shirts`)
-  - The `{taxonomy_handle}/show` view will be used. (eg. `product_tags/show.antlers.html`)
+  - Accessible at `/{taxonomy-slug}/{term-slug}` (eg. `/tags/t-shirts`)
+  - The `{taxonomy_handle}/show` view will be used. (eg. `tags/show.antlers.html`)
 
 For each taxonomy [assigned to a collection](#collections) you will also get these routes:
 
@@ -62,8 +62,8 @@ For each taxonomy [assigned to a collection](#collections) you will also get the
 - **Collection Term details**
   - Display the details of the term, so you can list the entries.
   - Only entries that exist in the collection will be displayed.
-  - Accessible at `/{collection-url}/{taxonomy slug}/{term slug}` (eg. `/blog/tags/retrowave`)
-  - The `{collection_handle}/{taxonomy}/show` view will be used. (eg. `blog/tags/show.antlers.html`)
+  - Accessible at `/{collection-url}/{taxonomy-slug}/{term-slug}` (eg. `/products/tags/t-shirts`)
+  - The `{collection_handle}/{taxonomy_handle}/show` view will be used. (eg. `blog/tags/show.antlers.html`)
 
 ## Term Values and Slugs
 
